@@ -127,7 +127,7 @@
     <h1 style="font-family: 'Black', sans-serif; color: #00fffb;">Danske fodboldfavoritter</h1>
 </div>
 <div id="introPage">
-    <img src="https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/fodboldcover.png" alt="1990s" width="500" height="500">
+    <img src="https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/fodboldcover.png" alt="fodboldfavoritter" width="500" height="500">
     <p style="font-family: 'Black', sans-serif; color: #00fffb; padding-top: 5px;">Alle de store danske fodboldhits!</p>
     <button id="startButton">Start</button>
 </div>
@@ -217,20 +217,19 @@
     }
 
     var songs = [
-        
-        {name: '1996', image: 'https://cdn.midjourney.com/e368b34a-9cb5-4138-b30f-33f90d8f05b7/0_0.png', spotifyId: '4QLZ62t7Y4S8hYxMWPnBdj', hint: '🎵 Vi vinder, vi ved vi kan 🎵'}, // Big Boys in red and white
-        {name: '1988', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/musketeer.png', spotifyId: '0Z3L6DTHIe3Qgr7GfIgVhi', hint: '🎵 Men når fløjten lyder, går kanonen af 🎵'}, // En for alle
-        {name: '2024', image: 'https://cdn.midjourney.com/cf156b30-da86-4d3a-aa65-7116f6f82217/0_0.png', spotifyId: '5uIy18j51mPvUhDcrGuj1p', hint: '🎵 Nu springer vi Tyskland i luften med danmarks dynamit 🎵'}, // Kongen af Danmark
-        {name: '1986', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/denmark.png', spotifyId: '3ESqYQ8FeekdaoDQhA9Urh', hint: '🎵 Og hvem er Danmarks dynamit? Det er vi 🎵'}, // Vi vinder i Mexico
-        {name: '2021', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/dyna.png', spotifyId: '3vhHc9HYELbqr7aS5s0yNO', hint: '🎵 Vi er red and white 🎵'}, // Danmarks Dynamite
-        {name: '2010', image: 'https://cdn.midjourney.com/788f951e-8bfb-4e15-bc0a-79e916529d4e/0_0.png', spotifyId: '72nbXmEx1uSUGu6WDInzGd', hint: '🎵 Og hvis de sparker os ned 🎵'}, // The danish way to rock
-        {name: '2018', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/goal2.png', spotifyId: '6K5EM3QuhA2fUUIHj8DTPO', hint: '🎵 Det er tre point og en bajer nu, det er tre point og en sejr nu 🎵'}, // Så er der mål
-        {name: '1998', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/3point.png', spotifyId: '4nSJYcU5Dev2oF9EFxvbf4', hint: '🎵 Danmark, Danmark, vi elsker vort land 🎵'}, // Vi vil have sejren i land
-        {name: '2021', image: 'https://cdn.midjourney.com/34ae5fd8-6fb9-464a-ba63-2bd30a949e52/0_2.png', spotifyId: '3O2CGoAfhhUreijFVm97Xj', hint: '🎵 Fisse, kusse 🎵'}, // Schmeichel er en mur
-        {name: '1986', image: 'https://cdn.midjourney.com/f5153368-0a6c-474e-a15f-7404935f612d/0_0.png', spotifyId: '6UPcylAJnEKnRanHyL64Qb', hint: '🎵 Danske drenge, der kan knalde 🎵'}, // Re-sepp-ten
-        {name: '2002', image: 'https://cdn.midjourney.com/a5a902ee-4bf0-4d56-b374-c52aaa321914/0_2.png', spotifyId: '0p030Tlxy9EBpA9Un2uSsh', hint: '🎵 I kan bare komme an 🎵'}, // Danmarks drenge
-        {name: '2010', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/goal.png', spotifyId: '4KnD3GODwcdk9bvPTgoDw7', hint: '🎵 Der er giga fest fra Faxe Ladeplads og helt til Skaldborg 🎵'}, // Mål og pølser
-        {name: '2010', image: 'https://cdn.midjourney.com/5598a59b-89dd-40e9-9145-8df0e5b20a22/0_0.png', spotifyId: '7cnnCpzLehRtnTtKbACAQU', hint: '🎵 Når de danske drenge går på banen i Sydafrika 🎵'}, // Vi tar guldet med hjem
+        {year: '1996', image: 'https://cdn.midjourney.com/e368b34a-9cb5-4138-b30f-33f90d8f05b7/0_0.png', spotifyId: '4QLZ62t7Y4S8hYxMWPnBdj', hint: '🎵 Vi vinder, vi ved vi kan 🎵'}, // Big Boys in red and white
+        {year: '1988', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/musketeer.png', spotifyId: '0Z3L6DTHIe3Qgr7GfIgVhi', hint: '🎵 Men når fløjten lyder, går kanonen af 🎵'}, // En for alle
+        {year: '2024', image: 'https://cdn.midjourney.com/cf156b30-da86-4d3a-aa65-7116f6f82217/0_0.png', spotifyId: '5uIy18j51mPvUhDcrGuj1p', hint: '🎵 Nu springer vi Tyskland i luften med danmarks dynamit 🎵'}, // Kongen af Danmark
+        {year: '1986', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/denmark.png', spotifyId: '3ESqYQ8FeekdaoDQhA9Urh', hint: '🎵 Og hvem er Danmarks dynamit? Det er vi 🎵'}, // Vi vinder i Mexico
+        {year: '2021', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/dyna.png', spotifyId: '3vhHc9HYELbqr7aS5s0yNO', hint: '🎵 Vi er red and white 🎵'}, // Danmarks Dynamite
+        {year: '2010', image: 'https://cdn.midjourney.com/788f951e-8bfb-4e15-bc0a-79e916529d4e/0_0.png', spotifyId: '72nbXmEx1uSUGu6WDInzGd', hint: '🎵 Og hvis de sparker os ned 🎵'}, // The danish way to rock
+        {year: '2018', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/goal2.png', spotifyId: '6K5EM3QuhA2fUUIHj8DTPO', hint: '🎵 Det er tre point og en bajer nu, det er tre point og en sejr nu 🎵'}, // Så er der mål
+        {year: '1998', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/3point.png', spotifyId: '4nSJYcU5Dev2oF9EFxvbf4', hint: '🎵 Danmark, Danmark, vi elsker vort land 🎵'}, // Vi vil have sejren i land
+        {year: '2021', image: 'https://cdn.midjourney.com/34ae5fd8-6fb9-464a-ba63-2bd30a949e52/0_2.png', spotifyId: '3O2CGoAfhhUreijFVm97Xj', hint: '🎵 Fisse, kusse 🎵'}, // Schmeichel er en mur
+        {year: '1986', image: 'https://cdn.midjourney.com/f5153368-0a6c-474e-a15f-7404935f612d/0_0.png', spotifyId: '6UPcylAJnEKnRanHyL64Qb', hint: '🎵 Danske drenge, der kan knalde 🎵'}, // Re-sepp-ten
+        {year: '2002', image: 'https://cdn.midjourney.com/a5a902ee-4bf0-4d56-b374-c52aaa321914/0_2.png', spotifyId: '0p030Tlxy9EBpA9Un2uSsh', hint: '🎵 I kan bare komme an 🎵'}, // Danmarks drenge
+        {year: '2010', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/goal.png', spotifyId: '4KnD3GODwcdk9bvPTgoDw7', hint: '🎵 Der er giga fest fra Faxe Ladeplads og helt til Skaldborg 🎵'}, // Mål og pølser
+        {year: '2010', image: 'https://raw.githubusercontent.com/lebecchio/musikquizzen.github.io/refs/heads/main/Img/gold.png', spotifyId: '7cnnCpzLehRtnTtKbACAQU', hint: '🎵 Når de danske drenge går på banen i Sydafrika 🎵'}, // Vi tar guldet med hjem
         //{name: '2024', image: 'image', spotifyId: 'spotify', hint: 'songhint'}, // 4-0
 
         //{name: '2024', image: 'image', spotifyId: 'spotify', hint: 'songhint'}, // song123
